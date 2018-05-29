@@ -32,10 +32,10 @@ class Github extends Component {
                             onChange={this.handleChange}
                         />
                     </div>
+                    <div>
+                        <button type="submit">Look up GitHub user</button>
+                    </div>
                 </form>
-                <div>
-                    <button type="submit">Look up GitHub user</button>
-                </div>
             </div> 
         )
     }
