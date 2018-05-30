@@ -11,6 +11,10 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font: 18pt;
+}
+
 h3 {
   font: italic 400 30px/40px "Gentium Book Basic", serif;
 }
