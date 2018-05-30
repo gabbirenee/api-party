@@ -24,6 +24,7 @@ class Github extends Component {
             <div className="Github">
                 <img 
                     src="http://www.aha.io/assets/github.7433692cabbfa132f34adb034e7909fa.png"
+                    className="logo"
                     alt="GitHub"    
                 />
                 <form onSubmit={this.handleSubmit}>

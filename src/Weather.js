@@ -26,22 +26,23 @@ class Weather extends Component{
                 <img 
                     src="https://media.dragstone.com/content/icon-openweathermap-1.png"
                     alt="Open Weather Map"
+                    className="logo"
                 />
 
                 <form onSubmit={this.handleSubmit}>
                     <div>
                         <input 
-                            type="number" 
+                            type="text" 
                             value={this.state.zipcode}
                             onChange={this.handleChange}
                         />
                     </div>
                     <div>
-                        <button type="submit">Find Weather by Zip Code</button>
+                        <button type="submit">Find Today's Weather by Zip Code</button>
                     </div>
                 </form>
-                <Route path="/github/:zipcode" component={WeatherForecast} />
-                <Route exact path="/zipcode" render={() => <h3>Please enter in a zipcode to find the Weather</h3>} />
+                <Route path="/weather/:zipcode" component={WeatherForecast} />
+                <Route exact path="/weather" render={() => <h3>Please enter in a zipcode to see today's weather</h3>} />
             </div>
         )
     }
